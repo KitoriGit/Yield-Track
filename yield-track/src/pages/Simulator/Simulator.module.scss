@@ -1,0 +1,7 @@
+@use '../../styles/abstracts/variables';
+
+.simulatorWrapper {
+    padding: 2rem;
+    border: 1px solid variables.$secondary-color;
+    border-radius: 8px;
+}

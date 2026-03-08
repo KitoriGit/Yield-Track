@@ -1,0 +1,26 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+:root {
+  --primary-color: #10b77f;
+  --bg-color: #06100c;
+  --surface-color: #0c1a15;
+  --text-color: #ffffff;
+  --secondary-color: #94a3b8;
+  --border-color: #1e2f28;
+  --negative-color: #ef4444;
+}
+
+body {
+  background-color: #06100c;
+  color: #ffffff;
+  font-family: "Inter", system-ui, sans-serif;
+}/*# sourceMappingURL=main.css.map */
