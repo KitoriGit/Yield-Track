@@ -6,10 +6,20 @@
     padding: 1rem 2rem;
     display: flex;
     align-items: center;
-}
+    justify-content: space-between;
 
-.logo {
-    color: variables.$primary-color;
-    font-size: 1.25rem;
-    font-weight: bold;
+    .logo {
+        color: variables.$primary-color;
+        font-size: 1.25rem;
+        font-weight: bold;
+    }
+
+    .notificationContainer {
+        background-color: var(--secondary-color);
+        color: var(--primary-color);
+        padding: var(--spacing-sm);
+        border-radius: var(--border-radius-full);
+        display: flex;
+        align-items: center;
+    }
 }

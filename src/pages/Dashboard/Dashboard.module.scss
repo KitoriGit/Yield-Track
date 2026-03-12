@@ -1,13 +1,9 @@
 @use '../../styles/abstracts/variables';
 
-.container {
-    padding: 2rem;
-    background-color: variables.$bg-color;
-}
-
-.title {
-    font-size: 2rem;
-    font-weight: bold;
-    margin-bottom: 1rem;
-    color: variables.$primary-color;
+.dashboardMain {
+    padding: var(--spacing-md);
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    justify-content: space-between;
 }

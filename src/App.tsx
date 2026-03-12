@@ -1,11 +1,22 @@
+import { Routes, Route } from 'react-router-dom';
 import { Dashboard } from './pages/Dashboard/Dashboard';
+import { Header } from './components/layout/Header';
+import { Navbar } from './components/layout/Navbar';
+
 
 function App() {
   return (
-    <main>
+    <>
+      <Header />
       {/* Estructura base lista. Aquí cargaremos el Router. */}
-      <Dashboard />
-    </main>
+      <Routes>
+        <Route path='/' element={<Dashboard />} />
+        <Route path='/history' element={<Dashboard />} />
+        <Route path='/simulator' element={<Dashboard />} />
+      </Routes>
+      <Navbar />
+
+    </>
   )
 }
 

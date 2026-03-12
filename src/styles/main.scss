@@ -4,12 +4,51 @@
 // Definición de variables CSS nativas (útil para debug y temas dinámicos)
 :root {
     --primary-color: #{variables.$primary-color};
+    --primary-light: #{variables.$primary-light};
+    --primary-dark: #{variables.$primary-dark};
     --bg-color: #{variables.$bg-color};
+    --bg-primary-soft: #{variables.$bg-primary-soft};
     --surface-color: #{variables.$surface-color};
+    --input-color: #{variables.$input-color};
     --text-color: #{variables.$text-color};
     --secondary-color: #{variables.$secondary-color};
+    --muted-text: #{variables.$muted-text};
     --border-color: #{variables.$border-color};
     --negative-color: #{variables.$negative-color};
+    --negative-light: #{variables.$negative-light};
+
+    // Typography
+    --font-size-xs: #{variables.$font-size-xs};
+    --font-size-sm: #{variables.$font-size-sm};
+    --font-size-md: #{variables.$font-size-md};
+    --font-size-lg: #{variables.$font-size-lg};
+    --font-size-xl: #{variables.$font-size-xl};
+    --font-size-2xl: #{variables.$font-size-2xl};
+
+    // Spacing
+    --spacing-xs: #{variables.$spacing-xs};
+    --spacing-sm: #{variables.$spacing-sm};
+    --spacing-md: #{variables.$spacing-md};
+    --spacing-lg: #{variables.$spacing-lg};
+    --spacing-xl: #{variables.$spacing-xl};
+    --spacing-2xl: #{variables.$spacing-2xl};
+
+    // UI Utilities
+    --border-radius-sm: #{variables.$border-radius-sm};
+    --border-radius-md: #{variables.$border-radius-md};
+    --border-radius-lg: #{variables.$border-radius-lg};
+    --border-radius-full: #{variables.$border-radius-full};
+    --transition-base: #{variables.$transition-base};
+    --shadow-sm: #{variables.$shadow-sm};
+
+    // Cards
+    --card-bg: #{variables.$card-bg};
+    --card-border: #{variables.$card-border};
+    --card-shadow: #{variables.$card-shadow};
+
+    // Layout
+    --navbar-height-mobile: #{variables.$navbar-height-mobile};
+    --sidebar-width-desktop: #{variables.$sidebar-width-desktop};
 }
 
 // Estilos globales

@@ -1,0 +1,14 @@
+.cardContainer {
+    background: linear-gradient(135deg, var(--primary-color), var(--primary-dark));
+    padding: var(--spacing-lg);
+    border-radius: var(--border-radius-lg);
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-sm);
+
+    .cardTitle {
+        font-size: var(--font-size-md);
+        font-weight: 500;
+        // color: var(--muted-text);
+    }
+}

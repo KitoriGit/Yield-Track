@@ -8,15 +8,50 @@ body {
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
 }
+body #root {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
 
 :root {
   --primary-color: #10b77f;
+  --primary-light: #34d399;
+  --primary-dark: #0d9668;
   --bg-color: #06100c;
+  --bg-primary-soft: #0a251d;
   --surface-color: #0c1a15;
+  --input-color: #14261f;
   --text-color: #ffffff;
-  --secondary-color: #94a3b8;
+  --secondary-color: #0d9466;
+  --muted-text: #94a3b8;
   --border-color: #1e2f28;
   --negative-color: #ef4444;
+  --negative-light: #f87171;
+  --font-size-xs: 0.75rem;
+  --font-size-sm: 0.875rem;
+  --font-size-md: 1rem;
+  --font-size-lg: 1.125rem;
+  --font-size-xl: 1.25rem;
+  --font-size-2xl: 1.5rem;
+  --spacing-xs: 0.25rem;
+  --spacing-sm: 0.5rem;
+  --spacing-md: 1rem;
+  --spacing-lg: 1.5rem;
+  --spacing-xl: 2rem;
+  --spacing-2xl: 3rem;
+  --border-radius-sm: 0.25rem;
+  --border-radius-md: 0.5rem;
+  --border-radius-lg: 0.75rem;
+  --border-radius-full: 9999px;
+  --transition-base: 0.2s ease-in-out;
+  --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  --card-bg: #0c1a15;
+  --card-border: 1px solid #1e2f28;
+  --card-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.5), 0 2px 4px -1px rgba(0, 0, 0, 0.3);
+  --navbar-height-mobile: 64px;
+  --sidebar-width-desktop: 240px;
 }
 
 body {

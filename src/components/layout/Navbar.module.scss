@@ -1,0 +1,70 @@
+@use '../../styles/abstracts/variables';
+
+.navbar {
+    // --- Estilos Base (Mobile First - Barra Inferior) ---
+    position: relative;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: var(--navbar-height-mobile);
+    background-color: var(--surface-color);
+    border-top: 1px solid var(--border-color);
+
+    display: flex;
+    flex-direction: row; // Horizontal
+    justify-content: space-around; // Distribuidos uniformemente
+    align-items: center;
+    z-index: 1000;
+    padding: 0 var(--spacing-sm);
+
+    // --- Estilos Desktop (Side Navbar) ---
+    @media (min-width: 768px) {
+        top: 0;
+        width: var(--sidebar-width-desktop);
+        height: 100vh; // Toda la altura
+        flex-direction: column; // Vertical
+        justify-content: flex-start; // Alineados arriba
+        border-top: none;
+        border-right: 1px solid var(--border-color);
+        padding: var(--spacing-xl) 0;
+    }
+
+    .navItem {
+        display: flex;
+        flex-direction: column; // Icono arriba del texto en móvil
+        align-items: center;
+        justify-content: center;
+        text-decoration: none;
+        color: var(--muted-text);
+        transition: color var(--transition-base);
+        gap: 4px;
+        flex: 1; // Ocupar espacio disponible en móvil
+
+        // Efecto Hover
+        &:hover {
+            color: var(--primary-color);
+        }
+
+        // Ajustes para Desktop
+        @media (min-width: 768px) {
+            flex-direction: row; // Icono al lado del texto
+            flex: 0; // No estirar
+            width: 100%;
+            padding: var(--spacing-md) var(--spacing-xl);
+            gap: var(--spacing-md);
+            justify-content: flex-start; // Alinear a la izquierda
+
+            &:hover {
+                background-color: var(--bg-primary-soft);
+            }
+        }
+    }
+
+    .label {
+        font-size: 0.7rem; // Pequeño en móvil
+
+        @media (min-width: 768px) {
+            font-size: var(--font-size-md); // Normal en desktop
+        }
+    }
+}

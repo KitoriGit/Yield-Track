@@ -4,10 +4,18 @@
   padding: 1rem 2rem;
   display: flex;
   align-items: center;
+  justify-content: space-between;
 }
-
-.logo {
+.header .logo {
   color: #10b77f;
   font-size: 1.25rem;
   font-weight: bold;
+}
+.header .notificationContainer {
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+  padding: var(--spacing-sm);
+  border-radius: var(--border-radius-full);
+  display: flex;
+  align-items: center;
 }/*# sourceMappingURL=Header.module.css.map */
